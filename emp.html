@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<style>
+/* Font */
+#slideshow {
+		overflow: hidden;
+		height: 100%;
+		width: 1510px;
+		margin: 0 auto;
+		margin-bottom: 0;
+		border-radius: 10px;
+	}
+	
+	/* Style each of the sides
+	with a fixed width and height */
+	
+	.slide {
+		float: left;
+		height: 100%;
+		width: 1510px;
+		border-radius: 60px;
+	}
+	
+	/* Add animation to the slides */
+	
+	.slide-wrapper {
+		
+		/* Calculate the total width on the
+	basis of number of slides */
+		width: calc(1510px * 2);
+		
+		/* Specify the animation with the
+	duration and speed */
+		animation: slide 17s ease infinite;
+	}
+	
+	/* Set the background color
+	of each of the slides */
+	
+	/* Define the animation
+	for the slideshow */
+	
+	@keyframes slide {
+		
+		/* Calculate the margin-left for
+	each of the slides */
+		20% {
+			margin-left: 0px;
+		}
+		40% {
+			margin-left: calc(-1510px * 1);
+		}
+	}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+background :url(e.png) no-repeat;
+background-size: 100% 10%;
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ <img src="o.png" style="position: absolute;left:55px;top:25px;" width="200px" height="350px">
+ <br>
+ <br>
+  <div id="slideshow">
+		<div class="slide-wrapper">
+			
+			<!-- Define each of the slides
+		and write the content -->
+			<div class="slide">
+				<img src="1.jpeg" align="left" width="1510" >
+			</div>
+			<div class="slide">
+				<img src="2.jpeg" align="left" width="1510" >
+			</div>
+		</div>
+	</div>
+<div class="main">
+  <h1>Employment Opportunities</h1>
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://www.jobsoid.com/wp-content/uploads/2019/01/What-goes-into-a-perfect-recruitment-process%EF%80%A5-640x480.png"></div>
+        <div class="card_content">
+          <h2 class="card_title">Alumni Recruitment</h2>
+          <p class="card_text">Find Genius Minds Across the Institution</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://assets-global.website-files.com/5f15530648874c5f977e91c2/62a90f350a4c9994222717c6_ABM%20College%20internship%20blog%201jpg.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Student Intern Programs</h2>
+          <p class="card_text">Enroll here for Alumni based Recruiting</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+   <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://miro.medium.com/max/1400/1*ZZTmjNKhQvXrtZbnh-kfoA.jpeg"></div>
+        <div class="card_content">
+          <h2 class="card_title">Student Entrepreneurship</h2>
+          <p class="card_text">Alumni's can able to patner with felolow students</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

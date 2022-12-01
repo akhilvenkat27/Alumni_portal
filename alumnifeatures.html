@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"> 
+        <title>Alumni Portal</title>
+        <style>
+            .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        body
+            {
+              background:url(ban.png);
+              background-size:100% 10%;
+              border-radius:105px ;
+              background-repeat: no-repeat;
+            }
+            #slideshow {
+		overflow: hidden;
+		height: 500px;
+		width: 1380px;
+		margin: 0 auto;
+		margin-bottom: 0;
+		border-radius: 55px;
+	}
+	
+	/* Style each of the sides
+	with a fixed width and height */
+	
+	.slide {
+		float: left;
+		height: 500px;
+		width: 1380px;
+		border-radius: 60px;
+	}
+	
+	/* Add animation to the slides */
+	
+	.slide-wrapper {
+		
+		/* Calculate the total width on the
+	basis of number of slides */
+		width: calc(1380px * 2);
+		
+		/* Specify the animation with the
+	duration and speed */
+		animation: slide 20s ease infinite;
+	}
+	
+	/* Set the background color
+	of each of the slides */
+	
+	/* Define the animation
+	for the slideshow */
+	
+	@keyframes slide {
+		
+		/* Calculate the margin-left for
+	each of the slides */
+		20% {
+			margin-left: 0px;
+		}
+		40% {
+			margin-left: calc(-1280px * 1);
+		}
+	}
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--veryLightGray);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+}
+
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+.red {
+    border-top: 3px solid var(--red);
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 20%;
+     
+    }
+    .header p {
+        width: 30%;
+    }
+    
+}
+        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<br>
+<br>
+<header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="C:\Users\HP\Desktop\Mami\header.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search this website">
+            </div>
+        </ul>
+    </nav>
+</header>
+    <div style="background-color:rgb(129, 129, 129); width: 1510px;;border-radius: 23px; height:500px;background-repeat: no-repeat;">
+    <div id="slideshow" >
+		<div class="slide-wrapper">
+			
+			<!-- Define each of the slides
+		and write the content -->
+			<div class="slide">
+				<img src="slid.jpeg" align="center" width="1380" height="500">
+			</div>
+			<div class="slide">
+				<img src="slidi.jpeg" align="center" width="1380" height="500">
+			</div>
+		</div>
+	</div>
+</div>
+<div style = "position:relative; top:-50px;">
+  <div class="header">
+    <h1>Introducing</h1>
+    <h1>The Roots of Alumni</h1>
+
+    <p>Here the Alumni's are being utilised for student welfares</p>
+  </div>
+  <div class="row1-container">
+    <div class="box box-down cyan">
+      <h2>ALUMNI MEETS</h2>
+      <p>Alumni  Interaction with the present studying students </p>
+      <a href="C:\Users\HP\Desktop\Are\meet.html"><img src="https://www.svgrepo.com/show/20300/meeting.svg" width="70" height="70" alt=""></a>
+    </div>
+
+    <div class="box red">
+      <h2>Volunteering & Mentorship</h2>
+      <p>Fellow students gets mentorship from Alumni's </p>
+      <P>click icon for more details </p>
+      <a href="#"><img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/512/external-mentor-skill-building-inipagistudio-mixed-inipagistudio.png" width="70" height="70"  alt=""></a>
+    </div>
+
+    <div class="box box-down blue">
+      <h2>Donations & Scholorships</h2>
+      <p>Financial Support by the Alumni's</p>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2618/2618524.png" width="70" height="70" alt=""></a>
+    </div>
+  </div>
+  <div class="row2-container">
+    <div class="box orange">
+      <h2>Employement Opportunity</h2>
+      <p>Internship & full time opportunities by Alumni </p>
+      <a href="#"><img src="https://www.svgrepo.com/show/122552/business.svg" width="70" height="70" alt=""></a>
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      @TEAM_INFINITI
+    </p>
+  </footer>
+  </div>
+</body>
+</html>

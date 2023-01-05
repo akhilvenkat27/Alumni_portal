@@ -1,100 +1,303 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML and CSS Slideshow</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
+	}
+	body{
+		background-color: rgb(0, 0, 0);
+		min-height: 100%;
+		
+	}
+	.he{
+		padding-bottom: 0;
+		margin-bottom: 0;
+		
+	}
+	.cm{
+		padding-bottom: 0;
+		margin-bottom: 0;
+		
+	}
+	
+	.odi{
+		padding-bottom: 0;
+		margin-bottom: 0;
+		margin-right: 910px;
+	}
+	#slideshow {
+		overflow: hidden;
+		height: 390px;
+		width: 1510px;
+		margin: 0 auto;
+		margin-bottom: 0;
+		border-radius: 10px;
+	}
+	
+	/* Style each of the sides
+	with a fixed width and height */
+	
+	.slide {
+		float: left;
+		height: 390px;
+		width: 1510px;
+		border-radius: 60px;
+	}
+	
+	/* Add animation to the slides */
+	
+	.slide-wrapper {
+		
+		/* Calculate the total width on the
+	basis of number of slides */
+		width: calc(1510px * 3);
+		
+		/* Specify the animation with the
+	duration and speed */
+		animation: slide 17s ease infinite;
+	}
+	
+	/* Set the background color
+	of each of the slides */
+	
+	/* Define the animation
+	for the slideshow */
+	
+	@keyframes slide {
+		
+		/* Calculate the margin-left for
+	each of the slides */
+		20% {
+			margin-left: 0px;
+		}
+		40% {
+			margin-left: calc(-1510px * 1);
+		}
+		60% {
+			margin-left: calc(-1510px * 2);
+		}
+	}
+	.hey{
+		border-radius: 10px;
+	}
+	.cards-list {
+  z-index: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom:0;
+  height:34%;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+  margin: 250px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 90px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
 }
 
-.container{
-    width: 90%;
-    height: 60vh;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow:  0px 5px 25px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -45px;
+  height: 40px;
 }
 
-.container form{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
 
-.inputBox{
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 5px;
-    overflow: hidden;
+.title-white {
+  color: white;
 }
 
-.inputBox input[type="text"], .inputBox input[type="email"]{
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 0px 10px;
-    font-size: 16px;
-    color: #444;
+.title-black {
+  color: black;
+}
+.navbar{
+            background-color: black;
+            
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+			cursor: pointer;
+			transition: color 1s;
+        }
+        .navbar li a:hover{
+            color: rgb(33, 33, 33)
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+		.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.ep{
+	margin-left: 15%;
+	border-radius: 28px;
 }
 
-.inputBox textarea{
-    width: 100%;
-    height: 120px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 0px 10px;
-    font-size: 16px;
-    color: #444;
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+	</style>
+</head>
 
-.inputBox button{
-    width: 100%;    
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    background: rgb(0, 119, 255);
-    color: #FFF;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    
-}
+<body>
+	<!-- Define the slideshow container -->
+	<img class="he" src="Head.jpeg" width="1517" height="160">
+	<div style = "position:relative; top:-160px;">
+		<img class="odi" src="odisha-logo-dark.png" align="left" width="400" height="150">
+		<img class="cm" src="cm-odisha (1).png" align="rigth" width="200" height="155">
+	</div>
+	<div style = "position:relative; top:-160px;">
+	<header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+				<li><a href="#">Reffrals</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+	<div id="slideshow">
+		<div class="slide-wrapper">
+			
+			<!-- Define each of the slides
+		and write the content -->
+			<div class="slide">
+				<img src="alumni portal.png" align="left" width="1510" height="390">
+			</div>
+			<div class="slide">
+				<img src="alumni portal (1).png" align="left" width="1510" height="390">
+			</div>
+			<div class="slide">
+				<img src="alumni portal (2).png" align="left" width="1510" height="390">
+			</div>
+		</div>
+	</div>
 
-.inputBox button:hover{
-    background: rgb(0, 17, 255);
-    transition: all 0.3s ease;
-}
-
-::placeholder{
-    font-size: 16px;
-}
-
-.alert{
-    width: 100%;
-    background: rgb(0, 255, 106);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 900;
-    display: none;
-}
+	<img class="hey" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Odisha_State_Secretariat_building.jpg" align="left" width="1515" padding-bottom=0%>
+	<div style = "position:relative; top:-660px;margin-bottom: -8px;">
+	<div class="cards-list" style="margin-bottom: -8px;">
+  
+		<div class="card 1" style="margin-bottom: -8px;">
+		  <div class="card_image" style="margin-bottom: -8px;"> 
+		<a class="card_image" href="C:\Users\HP\Desktop\Hola\home.html"><img src="https://www.pngitem.com/pimgs/m/5-51181_student-school-student-in-uniform-hd-png-download.png"></a>
+		</div>
+		  <div class="card_title title-white" style="margin-bottom: -8px;">
+			<p style="color:rgb(0, 0, 0)">Schools</p>
+		  </div>
+		</div>
+		
+		  <div class="card 2" style="margin-bottom: -8px;" >
+		  <div class="card_image" style="margin-bottom: -8px;">
+			<img src="studi.jpeg" />
+			</div>
+		  <div class="card_title title-white" style="margin-bottom: -8px;">
+			<p style="color:#000000">Intermediate</p>
+		  </div>
+		</div>
+		
+		<div class="card 3" style="margin-bottom: -8px;">
+		  <div class="card_image" style="margin-bottom: -8px;">
+			<img src="https://media.istockphoto.com/id/1048192018/photo/latin-engineer-working-on-laptop-and-drill.jpg?s=612x612&w=0&k=20&c=Rz7ZGsikctEEIqX58Nw-PnehmNVr-TgqtVzqDfxjM5U=" />
+		  </div>
+		  <div class="card_title" style="margin-bottom: -8px;">
+			<p style="color:rgb(0, 0, 0)">Graduates</p>
+		  </div>
+		</div>
+		  
+		<div class="card 4" style="margin-bottom: -8px;">
+		  <div class="card_image" style="margin-bottom: -8px;">
+			<img src="doc.jpg" />
+			</div>
+		  <div class="card_title title-black" style="margin-bottom: -8px;">
+			<p style="color:rgb(0, 0, 0)">Doctorates</p>
+		  </div>
+		</div>
+	</div>
+	</div>
+</div>
+<div style = "position:relative; top:-760px;margin-bottom: -8px;">
+<hr>
+<div style="background-image:url(backdrop.jpeg);width: 100%;height:650 ;">
+<br>
+<div class="row">
+	<div class="column">
+		<vr><img class="ep" src="exp (1).jpeg"  width="360px" height="360px"></vr>
+		
+	</div>
+	<div class="column">
+		<vr><img class="ep" src="exp (2).jpeg"  width="360px" height="360px"></vr>
+	</div>
+	<div class="column">
+		<vr></vr><img class="ep" src="exp (3).jpeg"  width="360px" height="360px"></vr>
+	</div>
+  </div>
+<br>
+</div>
+<hr>
+</div>
+</body>
+</html>
